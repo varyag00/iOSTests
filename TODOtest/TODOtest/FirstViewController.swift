@@ -10,7 +10,7 @@ import UIKit
 
 var todoList = [String]()
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var todoListTable: UITableView!
     
@@ -18,6 +18,11 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        if NSUserDefaults.standardUserDefaults().objectForKey("todoList") != nil {
+            
+            todoList = NSUserDefaults.standardUserDefaults().objectForKey("todoList") as! [String]
+
+        }
         
     }
 
@@ -44,6 +49,22 @@ class FirstViewController: UIViewController {
         
         return cell
     }
+    
+    //when user attempts to edit a cell (swipes on tableview cell)
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        
+        //this editing style == swipe left
+        if editingStyle == UITableViewCellEditingStyle.Delete{
+            todoList.removeAtIndex(indexPath.row)   //remove the cell user swiped on 
+            
+            //update todoList on disk
+            NSUserDefaults.standardUserDefaults().setObject(todoList, forKey: "todoList")
+            
+            //refresh, reload table to get rid of cell
+            todoListTable.reloadData()
+        }
+    }
+    
     
     //refresh table
     override func viewDidAppear(animated: Bool) {

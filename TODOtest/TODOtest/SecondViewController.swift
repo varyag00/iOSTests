@@ -19,6 +19,9 @@ class SecondViewController: UIViewController {
             //add it up
             todoList.append(todoitemTextField.text!)
             
+            //save it to disk
+            NSUserDefaults.standardUserDefaults().setObject(todoList, forKey: "todoList")
+            
             //clear textfield
             todoitemTextField.text = ""
         }
