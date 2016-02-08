@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		994F28253E1C9271CA253B9A /* Pods_SpotDan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDD6D62CF7DF6179893EE3B /* Pods_SpotDan.framework */; };
+		9F66731F1C586FDF00B8023C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66731E1C586FDF00B8023C /* AppDelegate.swift */; };
+		9F6673211C586FDF00B8023C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6673201C586FDF00B8023C /* ViewController.swift */; };
+		9F6673241C586FDF00B8023C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6673221C586FDF00B8023C /* Main.storyboard */; };
+		9F6673261C586FDF00B8023C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6673251C586FDF00B8023C /* Assets.xcassets */; };
+		9F6673291C586FDF00B8023C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6673271C586FDF00B8023C /* LaunchScreen.storyboard */; };
+		9F6673311C586FFA00B8023C /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6673301C586FFA00B8023C /* Gym.swift */; };
+		9F6673331C58704D00B8023C /* GymTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6673321C58704D00B8023C /* GymTableViewController.swift */; };
+		9F6673351C58707600B8023C /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6673341C58707600B8023C /* GymTableViewCell.swift */; };
+		9F6673371C58735B00B8023C /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6673361C58735B00B8023C /* GymViewController.swift */; };
+		9F89F12E1C5931BE004C6D66 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F12D1C5931BE004C6D66 /* Equipment.swift */; };
+		9F89F1301C593273004C6D66 /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F12F1C593273004C6D66 /* EquipmentViewController.swift */; };
+		9F89F1321C593283004C6D66 /* EquipmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F1311C593283004C6D66 /* EquipmentTableViewController.swift */; };
+		9F89F1341C593294004C6D66 /* EquipmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F1331C593294004C6D66 /* EquipmentTableViewCell.swift */; };
+		9F89F1361C5932EA004C6D66 /* Spotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F1351C5932EA004C6D66 /* Spotter.swift */; };
+		9F89F1381C593373004C6D66 /* SpotterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F1371C593373004C6D66 /* SpotterTableViewCell.swift */; };
+		9F89F13A1C593380004C6D66 /* SpotterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F1391C593380004C6D66 /* SpotterTableViewController.swift */; };
+		9F89F13C1C59338F004C6D66 /* SpotterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F13B1C59338F004C6D66 /* SpotterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06F0FFD10C9E1B85FEA4E632 /* Pods-SpotDan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotDan.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotDan/Pods-SpotDan.release.xcconfig"; sourceTree = "<group>"; };
+		5DA154E490844C3163D22015 /* Pods-SpotDan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotDan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotDan/Pods-SpotDan.debug.xcconfig"; sourceTree = "<group>"; };
+		8FDD6D62CF7DF6179893EE3B /* Pods_SpotDan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotDan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F66731B1C586FDF00B8023C /* SpotDan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotDan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F66731E1C586FDF00B8023C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F6673201C586FDF00B8023C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F6673231C586FDF00B8023C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F6673251C586FDF00B8023C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F6673281C586FDF00B8023C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F66732A1C586FDF00B8023C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6673301C586FFA00B8023C /* Gym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
+		9F6673321C58704D00B8023C /* GymTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymTableViewController.swift; sourceTree = "<group>"; };
+		9F6673341C58707600B8023C /* GymTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
+		9F6673361C58735B00B8023C /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		9F89F12D1C5931BE004C6D66 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		9F89F12F1C593273004C6D66 /* EquipmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
+		9F89F1311C593283004C6D66 /* EquipmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewController.swift; sourceTree = "<group>"; };
+		9F89F1331C593294004C6D66 /* EquipmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewCell.swift; sourceTree = "<group>"; };
+		9F89F1351C5932EA004C6D66 /* Spotter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotter.swift; sourceTree = "<group>"; };
+		9F89F1371C593373004C6D66 /* SpotterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotterTableViewCell.swift; sourceTree = "<group>"; };
+		9F89F1391C593380004C6D66 /* SpotterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotterTableViewController.swift; sourceTree = "<group>"; };
+		9F89F13B1C59338F004C6D66 /* SpotterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F6673181C586FDF00B8023C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994F28253E1C9271CA253B9A /* Pods_SpotDan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37270673FD5DEEBBA7685F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DA154E490844C3163D22015 /* Pods-SpotDan.debug.xcconfig */,
+				06F0FFD10C9E1B85FEA4E632 /* Pods-SpotDan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F6673121C586FDF00B8023C = {
+			isa = PBXGroup;
+			children = (
+				9F66731D1C586FDF00B8023C /* SpotDan */,
+				9F66731C1C586FDF00B8023C /* Products */,
+				9FA7E4A8A630D5097D26A768 /* Frameworks */,
+				37270673FD5DEEBBA7685F09 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9F66731C1C586FDF00B8023C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F66731B1C586FDF00B8023C /* SpotDan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F66731D1C586FDF00B8023C /* SpotDan */ = {
+			isa = PBXGroup;
+			children = (
+				9F89F12B1C593194004C6D66 /* equipment */,
+				9F89F12C1C59319C004C6D66 /* spotter */,
+				9F66731E1C586FDF00B8023C /* AppDelegate.swift */,
+				9F6673201C586FDF00B8023C /* ViewController.swift */,
+				9F6673221C586FDF00B8023C /* Main.storyboard */,
+				9F6673251C586FDF00B8023C /* Assets.xcassets */,
+				9F6673271C586FDF00B8023C /* LaunchScreen.storyboard */,
+				9F66732A1C586FDF00B8023C /* Info.plist */,
+				9F6673381C588E0F00B8023C /* gym */,
+			);
+			path = SpotDan;
+			sourceTree = "<group>";
+		};
+		9F6673381C588E0F00B8023C /* gym */ = {
+			isa = PBXGroup;
+			children = (
+				9F6673361C58735B00B8023C /* GymViewController.swift */,
+				9F6673321C58704D00B8023C /* GymTableViewController.swift */,
+				9F6673301C586FFA00B8023C /* Gym.swift */,
+				9F6673341C58707600B8023C /* GymTableViewCell.swift */,
+			);
+			name = gym;
+			sourceTree = "<group>";
+		};
+		9F89F12B1C593194004C6D66 /* equipment */ = {
+			isa = PBXGroup;
+			children = (
+				9F89F12D1C5931BE004C6D66 /* Equipment.swift */,
+				9F89F12F1C593273004C6D66 /* EquipmentViewController.swift */,
+				9F89F1311C593283004C6D66 /* EquipmentTableViewController.swift */,
+				9F89F1331C593294004C6D66 /* EquipmentTableViewCell.swift */,
+			);
+			name = equipment;
+			sourceTree = "<group>";
+		};
+		9F89F12C1C59319C004C6D66 /* spotter */ = {
+			isa = PBXGroup;
+			children = (
+				9F89F1351C5932EA004C6D66 /* Spotter.swift */,
+				9F89F1371C593373004C6D66 /* SpotterTableViewCell.swift */,
+				9F89F1391C593380004C6D66 /* SpotterTableViewController.swift */,
+				9F89F13B1C59338F004C6D66 /* SpotterViewController.swift */,
+			);
+			name = spotter;
+			sourceTree = "<group>";
+		};
+		9FA7E4A8A630D5097D26A768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD6D62CF7DF6179893EE3B /* Pods_SpotDan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F66731A1C586FDF00B8023C /* SpotDan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F66732D1C586FDF00B8023C /* Build configuration list for PBXNativeTarget "SpotDan" */;
+			buildPhases = (
+				6F496CB69C384179B45BEEFD /* Check Pods Manifest.lock */,
+				9F6673171C586FDF00B8023C /* Sources */,
+				9F6673181C586FDF00B8023C /* Frameworks */,
+				9F6673191C586FDF00B8023C /* Resources */,
+				D96A3B9D3F91656C541E1F60 /* Embed Pods Frameworks */,
+				620EB8564A37E5B183956AA8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotDan;
+			productName = SpotDan;
+			productReference = 9F66731B1C586FDF00B8023C /* SpotDan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F6673131C586FDF00B8023C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Safewalk;
+				TargetAttributes = {
+					9F66731A1C586FDF00B8023C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 9F6673161C586FDF00B8023C /* Build configuration list for PBXProject "SpotDan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F6673121C586FDF00B8023C;
+			productRefGroup = 9F66731C1C586FDF00B8023C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F66731A1C586FDF00B8023C /* SpotDan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F6673191C586FDF00B8023C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6673291C586FDF00B8023C /* LaunchScreen.storyboard in Resources */,
+				9F6673261C586FDF00B8023C /* Assets.xcassets in Resources */,
+				9F6673241C586FDF00B8023C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		620EB8564A37E5B183956AA8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpotDan/Pods-SpotDan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F496CB69C384179B45BEEFD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D96A3B9D3F91656C541E1F60 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpotDan/Pods-SpotDan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F6673171C586FDF00B8023C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6673211C586FDF00B8023C /* ViewController.swift in Sources */,
+				9F6673311C586FFA00B8023C /* Gym.swift in Sources */,
+				9F89F1361C5932EA004C6D66 /* Spotter.swift in Sources */,
+				9F6673351C58707600B8023C /* GymTableViewCell.swift in Sources */,
+				9F89F1321C593283004C6D66 /* EquipmentTableViewController.swift in Sources */,
+				9F89F13A1C593380004C6D66 /* SpotterTableViewController.swift in Sources */,
+				9F89F13C1C59338F004C6D66 /* SpotterViewController.swift in Sources */,
+				9F66731F1C586FDF00B8023C /* AppDelegate.swift in Sources */,
+				9F6673371C58735B00B8023C /* GymViewController.swift in Sources */,
+				9F89F1341C593294004C6D66 /* EquipmentTableViewCell.swift in Sources */,
+				9F89F12E1C5931BE004C6D66 /* Equipment.swift in Sources */,
+				9F89F1381C593373004C6D66 /* SpotterTableViewCell.swift in Sources */,
+				9F6673331C58704D00B8023C /* GymTableViewController.swift in Sources */,
+				9F89F1301C593273004C6D66 /* EquipmentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F6673221C586FDF00B8023C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6673231C586FDF00B8023C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F6673271C586FDF00B8023C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6673281C586FDF00B8023C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F66732B1C586FDF00B8023C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F66732C1C586FDF00B8023C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F66732E1C586FDF00B8023C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA154E490844C3163D22015 /* Pods-SpotDan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotDan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.safewalk.SpotDan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F66732F1C586FDF00B8023C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F0FFD10C9E1B85FEA4E632 /* Pods-SpotDan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotDan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.safewalk.SpotDan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F6673161C586FDF00B8023C /* Build configuration list for PBXProject "SpotDan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F66732B1C586FDF00B8023C /* Debug */,
+				9F66732C1C586FDF00B8023C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F66732D1C586FDF00B8023C /* Build configuration list for PBXNativeTarget "SpotDan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F66732E1C586FDF00B8023C /* Debug */,
+				9F66732F1C586FDF00B8023C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F6673131C586FDF00B8023C /* Project object */;
+}
