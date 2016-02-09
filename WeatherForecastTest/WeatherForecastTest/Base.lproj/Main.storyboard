@@ -35,6 +35,9 @@
                                     <constraint firstAttribute="width" constant="37" id="BPo-fH-4Sv"/>
                                 </constraints>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="DoneButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4F-Zu-rC4"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJd-DS-Zbi">
                                 <rect key="frame" x="20" y="73" width="235" height="30"/>
@@ -57,6 +60,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="CityTextField" destination="xJd-DS-Zbi" id="2JO-rb-VUS"/>
+                        <outlet property="WebView" destination="4LK-9r-vjy" id="qUp-uh-ORe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
