@@ -26,12 +26,17 @@ class ViewController: UIViewController {
         
         if CityTextField.text?.characters.count > 0 {
             city = String(UTF8String: CityTextField.text!)!
+            city = NSString(string: city).stringByReplacingOccurrencesOfString(" ", withString: "-")
             
             //newUrlString should now contain a valid URL if valid city given
             let newUrlString = urlString.stringByReplacingOccurrencesOfString("<city>", withString: city)
             url = NSURL(string: newUrlString)!
             
             WebView.loadRequest(NSURLRequest(URL: url))
+        }
+        
+        else{
+            print("Don't try to break the app!")
         }
     }
     
