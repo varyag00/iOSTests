@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3751042A1C6A877E0026E2EB"
-               BuildableName = "ImagesTest.app"
-               BlueprintName = "ImagesTest"
-               ReferencedContainer = "container:ImagesTest.xcodeproj">
+               BuildableName = "AnimationTest.app"
+               BlueprintName = "AnimationTest"
+               ReferencedContainer = "container:AnimationTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3751042A1C6A877E0026E2EB"
-            BuildableName = "ImagesTest.app"
-            BlueprintName = "ImagesTest"
-            ReferencedContainer = "container:ImagesTest.xcodeproj">
+            BuildableName = "AnimationTest.app"
+            BlueprintName = "AnimationTest"
+            ReferencedContainer = "container:AnimationTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3751042A1C6A877E0026E2EB"
-            BuildableName = "ImagesTest.app"
-            BlueprintName = "ImagesTest"
-            ReferencedContainer = "container:ImagesTest.xcodeproj">
+            BuildableName = "AnimationTest.app"
+            BlueprintName = "AnimationTest"
+            ReferencedContainer = "container:AnimationTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3751042A1C6A877E0026E2EB"
-            BuildableName = "ImagesTest.app"
-            BlueprintName = "ImagesTest"
-            ReferencedContainer = "container:ImagesTest.xcodeproj">
+            BuildableName = "AnimationTest.app"
+            BlueprintName = "AnimationTest"
+            ReferencedContainer = "container:AnimationTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

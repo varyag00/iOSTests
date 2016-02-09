@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3751042B1C6A877E0026E2EB /* ImagesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3751042B1C6A877E0026E2EB /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3751042E1C6A877E0026E2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375104301C6A877E0026E2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		375104331C6A877E0026E2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		3751042C1C6A877E0026E2EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3751042B1C6A877E0026E2EB /* ImagesTest.app */,
+				3751042B1C6A877E0026E2EB /* AnimationTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3751042A1C6A877E0026E2EB /* ImagesTest */ = {
+		3751042A1C6A877E0026E2EB /* AnimationTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3751043D1C6A877F0026E2EB /* Build configuration list for PBXNativeTarget "ImagesTest" */;
+			buildConfigurationList = 3751043D1C6A877F0026E2EB /* Build configuration list for PBXNativeTarget "AnimationTest" */;
 			buildPhases = (
 				375104271C6A877E0026E2EB /* Sources */,
 				375104281C6A877E0026E2EB /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = ImagesTest;
+			name = AnimationTest;
 			productName = ImagesTest;
-			productReference = 3751042B1C6A877E0026E2EB /* ImagesTest.app */;
+			productReference = 3751042B1C6A877E0026E2EB /* AnimationTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 375104261C6A877E0026E2EB /* Build configuration list for PBXProject "ImagesTest" */;
+			buildConfigurationList = 375104261C6A877E0026E2EB /* Build configuration list for PBXProject "AnimationTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3751042A1C6A877E0026E2EB /* ImagesTest */,
+				3751042A1C6A877E0026E2EB /* AnimationTest */,
 			);
 		};
 /* End PBXProject section */
@@ -270,7 +270,7 @@
 				INFOPLIST_FILE = ImagesTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.varyag00.ImagesTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimationTest;
 			};
 			name = Debug;
 		};
@@ -281,14 +281,14 @@
 				INFOPLIST_FILE = ImagesTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.varyag00.ImagesTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimationTest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		375104261C6A877E0026E2EB /* Build configuration list for PBXProject "ImagesTest" */ = {
+		375104261C6A877E0026E2EB /* Build configuration list for PBXProject "AnimationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3751043B1C6A877F0026E2EB /* Debug */,
@@ -297,7 +297,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3751043D1C6A877F0026E2EB /* Build configuration list for PBXNativeTarget "ImagesTest" */ = {
+		3751043D1C6A877F0026E2EB /* Build configuration list for PBXNativeTarget "AnimationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3751043E1C6A877F0026E2EB /* Debug */,
