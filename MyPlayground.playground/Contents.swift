@@ -64,8 +64,25 @@ for (ind, val) in arr.enumerate(){
 }
 
 
+//playing with strings
 
+var str2 = "Hello world!"
+var str3 = str2 + " :)"
 
+for character in str3.characters{
+    print(character)
+}
 
+//conver str to type NSString, has more methods
+var newTypeString = NSString(string: str3)
 
+newTypeString.substringToIndex(4)
+newTypeString.substringFromIndex(6)
+
+if newTypeString.containsString("worl"){
+    print("it does!")
+}
+
+newTypeString.componentsSeparatedByString(" ")
+newTypeString.lowercaseString
 
