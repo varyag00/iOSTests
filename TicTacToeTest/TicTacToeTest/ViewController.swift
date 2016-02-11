@@ -8,12 +8,20 @@
 
 /*
 TODO:
-    
-    -add animations to labels (and maybe button)
+
+    -add animations to labels (and maybe button) -- DONE, but going to mess around with Spring
+-NOTE: as of right now (02-11-2016), the cocoapods version of Spring pulls from an outdated branch, and thus I had to update my Podfile to 
+        pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'master'
+    in order for builds to succeed
+
+    Steps for Spring animations (using cocoapods)
+    1. Create Spring view
+    2. Add subviews to
 */
 
 
 import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
@@ -21,8 +29,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Board: UIImageView!
     @IBOutlet weak var Button: UIButton!
-    @IBOutlet weak var GameOverLabel: UILabel!
+    @IBOutlet weak var GameOverLabel: SpringLabel!
     @IBOutlet weak var NewGameButton: UIButton!
+    
+    
+    //@IBOutlet weak var GameOverLabel: SpringLabel!
     
     //TEMP BUG FIX: ref to top left button to clear it directly after every game
     @IBOutlet weak var ZerothButton: UIButton!
@@ -123,8 +134,11 @@ class ViewController: UIViewController {
                     GameOverLabel.backgroundColor = UIColor.redColor()
                 }
                 
+
                 GameOverLabel.hidden = false
-                NewGameButton.hidden = false
+                GameOverLabel.animation = "slideDown"
+                GameOverLabel.animate()
+                NewGameButton.alpha = 1
                 gameOver = true
                 return
             }
@@ -144,8 +158,10 @@ class ViewController: UIViewController {
                     GameOverLabel.text = "Game ends in a Draw!"
                     //set label colour
                     GameOverLabel.backgroundColor = UIColor.grayColor()
-                    GameOverLabel.hidden = false
-                    NewGameButton.hidden = false
+                    GameOverLabel.alpha = 1
+                    NewGameButton.alpha = 1
+                    GameOverLabel.animation = "slideDown"
+                    GameOverLabel.animate()
                     gameOver = true
                     return
                 }
@@ -156,13 +172,14 @@ class ViewController: UIViewController {
     //resets the game to its initial state so another game can be played
     func resetGame(){
         player = 1
-        GameOverLabel.hidden = true
-        NewGameButton.hidden = true
+        //GameOverLabel.hidden = true
+        GameOverLabel.alpha = 0
+        //NewGameButton.hidden = true
+        NewGameButton.alpha = 0
         gameOver = false
         gameState = [-1,-1,-1,-1,-1,-1,-1,-1,-1]
         
         //for all buttons, delete drawn image
-        //var buttonToClear:UIButton
         
         for var i = 0; i < 9; i++ {
             //BUG: attempting to cast UIImageView to UIButton... for some reason the ImageView's tag is set to 0 after the first game completes... so the first button doesn't clear
@@ -170,6 +187,7 @@ class ViewController: UIViewController {
                 buttonToClear.setImage(nil, forState: .Normal)
             }
         }
+        //temp bug fix
         ZerothButton.setImage(nil, forState: .Normal)
     }
     

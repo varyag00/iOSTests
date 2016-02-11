@@ -143,7 +143,7 @@
                                     <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucc-vk-cQ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Over Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-4h-Qph">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Over Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-4h-Qph" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="17" y="284" width="344" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.35294117647058826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.76811730600000006" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,6 +155,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" red="0.93756474087462183" green="0.98039215690000003" blue="0.9636119615745582" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.99920089933876655" green="0.98604170188677753" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" tag="-1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAx-ez-Fg5">
                                 <rect key="frame" x="113" y="392" width="142" height="54"/>
@@ -205,7 +209,7 @@
                     <connections>
                         <outlet property="Board" destination="CZz-fb-c8p" id="KBo-Ic-Iey"/>
                         <outlet property="Button" destination="Q8b-re-8z5" id="y1B-wP-dqx"/>
-                        <outlet property="GameOverLabel" destination="vrL-4h-Qph" id="DjM-36-w8b"/>
+                        <outlet property="GameOverLabel" destination="vrL-4h-Qph" id="Ulr-Xs-QV2"/>
                         <outlet property="NewGameButton" destination="kAx-ez-Fg5" id="iyf-gb-hpF"/>
                         <outlet property="ZerothButton" destination="Q8b-re-8z5" id="DjW-kh-EP7"/>
                     </connections>
