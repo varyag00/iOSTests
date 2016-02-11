@@ -14,18 +14,18 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="-1" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZz-fb-c8p">
+                            <imageView userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZz-fb-c8p">
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="E0u-NX-3Ls"/>
                                     <constraint firstAttribute="height" constant="375" id="TG6-FS-Xrl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-hm-sHU">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-hm-sHU">
                                 <rect key="frame" x="77" y="20" width="220" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="91e-2v-2EP"/>
@@ -143,7 +143,7 @@
                                     <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucc-vk-cQ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Over Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-4h-Qph">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Over Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-4h-Qph">
                                 <rect key="frame" x="17" y="284" width="344" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.35294117647058826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.76811730600000006" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,10 +156,23 @@
                                 <color key="highlightedColor" red="0.93756474087462183" green="0.98039215690000003" blue="0.9636119615745582" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.99920089933876655" green="0.98604170188677753" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAx-ez-Fg5">
+                                <rect key="frame" x="113" y="392" width="142" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="LRK-3t-6FV"/>
+                                    <constraint firstAttribute="width" constant="142" id="hGY-dr-0U4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Play Again?"/>
+                                <connections>
+                                    <action selector="NewGameButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsY-wm-w4v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CZz-fb-c8p" firstAttribute="leading" secondItem="NfM-d9-Ug4" secondAttribute="trailing" constant="-117" id="0EL-ZK-jNK"/>
+                            <constraint firstItem="kAx-ez-Fg5" firstAttribute="top" secondItem="vrL-4h-Qph" secondAttribute="bottom" constant="8" id="0bh-pB-6nT"/>
                             <constraint firstItem="CZz-fb-c8p" firstAttribute="leading" secondItem="qEB-R9-zuV" secondAttribute="trailing" constant="-234" id="3j2-PT-hRs"/>
                             <constraint firstItem="gJN-V0-QPh" firstAttribute="leading" secondItem="CZz-fb-c8p" secondAttribute="trailing" constant="-117" id="7ed-hC-51G"/>
                             <constraint firstItem="PiU-Ok-QPt" firstAttribute="top" secondItem="CZz-fb-c8p" secondAttribute="bottom" constant="-117" id="9zp-KD-23E"/>
@@ -185,6 +198,7 @@
                             <constraint firstItem="TUi-mT-60S" firstAttribute="leading" secondItem="CZz-fb-c8p" secondAttribute="trailing" constant="-114" id="sbu-dG-VP3"/>
                             <constraint firstItem="HJH-nh-IkF" firstAttribute="top" secondItem="CZz-fb-c8p" secondAttribute="bottom" constant="-237" id="v2m-03-6qn"/>
                             <constraint firstItem="vrL-4h-Qph" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wNF-Bf-zkC"/>
+                            <constraint firstItem="kAx-ez-Fg5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wmw-6L-Q8V"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -192,6 +206,8 @@
                         <outlet property="Board" destination="CZz-fb-c8p" id="KBo-Ic-Iey"/>
                         <outlet property="Button" destination="Q8b-re-8z5" id="y1B-wP-dqx"/>
                         <outlet property="GameOverLabel" destination="vrL-4h-Qph" id="DjM-36-w8b"/>
+                        <outlet property="NewGameButton" destination="kAx-ez-Fg5" id="iyf-gb-hpF"/>
+                        <outlet property="ZerothButton" destination="Q8b-re-8z5" id="DjW-kh-EP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
