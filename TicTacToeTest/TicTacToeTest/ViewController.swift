@@ -16,12 +16,13 @@ TODO:
 
     Steps for Spring animations (using cocoapods)
     1. Create Spring view
-    2. Add subviews to
+    2. DO IT
 */
 
 
 import UIKit
 import Spring
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Board: UIImageView!
     @IBOutlet weak var Button: UIButton!
-    @IBOutlet weak var GameOverLabel: SpringLabel!
+    @IBOutlet weak var GameOverLabel: SpringLabel! 
     @IBOutlet weak var NewGameButton: UIButton!
     
     

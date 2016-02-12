@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'TicTacToeTest' do
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'master'
+    pod 'Alamofire', '~> 3.2'
 
 end
 

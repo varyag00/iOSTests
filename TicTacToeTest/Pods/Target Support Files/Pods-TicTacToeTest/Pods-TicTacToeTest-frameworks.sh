@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-TicTacToeTest/Alamofire.framework"
   install_framework "Pods-TicTacToeTest/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-TicTacToeTest/Alamofire.framework"
   install_framework "Pods-TicTacToeTest/Spring.framework"
 fi

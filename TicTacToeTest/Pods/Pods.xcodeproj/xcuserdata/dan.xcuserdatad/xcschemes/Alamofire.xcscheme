@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6BC8200E8ECDDA1963C5292F'
-               BlueprintName = 'Pods-TicTacToeTest'
+               BlueprintIdentifier = '03345ACB0A4CA7AA8A5F97E3'
+               BlueprintName = 'Alamofire'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_TicTacToeTest.framework'>
+               BuildableName = 'Alamofire.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
