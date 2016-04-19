@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDe-Wl-ZBM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="1172"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-GS-bk9">
+                                        <rect key="frame" x="179" y="19" width="29" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="Xx4-rr-fJv"/>
+                                            <constraint firstAttribute="height" constant="21" id="jjJ-4Z-E34"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrP-aU-oZQ">
+                                        <rect key="frame" x="165" y="1143" width="56" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4ov-7Y-86N"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="70G-3E-fa9"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="56" id="OV8-s2-cE6"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="dLL-BD-fIx"/>
+                                            <constraint firstAttribute="width" constant="56" id="lYB-rh-2LC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qrP-aU-oZQ" secondAttribute="bottom" constant="8" id="RHK-cw-BBI"/>
+                                    <constraint firstAttribute="height" constant="1172" id="TxS-cK-ZVZ"/>
+                                    <constraint firstItem="Jpl-GS-bk9" firstAttribute="centerX" secondItem="yDe-Wl-ZBM" secondAttribute="centerX" constant="6" id="aO2-6T-2Tn"/>
+                                    <constraint firstItem="Jpl-GS-bk9" firstAttribute="top" secondItem="yDe-Wl-ZBM" secondAttribute="top" constant="19" id="iHY-a4-F85"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yDe-Wl-ZBM" secondAttribute="bottom" id="6FS-o0-5fb"/>
+                            <constraint firstItem="yDe-Wl-ZBM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PPe-4u-xbY"/>
+                            <constraint firstItem="yDe-Wl-ZBM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fJN-AE-TMU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yDe-Wl-ZBM" secondAttribute="trailing" constant="-20" id="lBK-Jz-i4h"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="qrP-aU-oZQ" id="Dr0-fZ-gdw"/>
+                        <outlet property="myScrollView" destination="yDe-Wl-ZBM" id="Lyo-Yi-RZB"/>
+                        <outlet property="topLabel" destination="Jpl-GS-bk9" id="DeS-02-o85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447.5" y="436.5"/>
+        </scene>
+    </scenes>
+</document>
